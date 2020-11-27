@@ -66,15 +66,16 @@ function draw() {
 
 }
  
-function mouseDragged() {
-	Matter.Body.setPosition(ball1.body,{x: mouseX, y: mouseY})
+function keyPressed() {
+	if(keyCode=== UP_ARROW) {
+		Matter.Body.applyForce(ball1.body,ball1.body.position,{x:100, y:-100})
+	}
+
 	}
 	
-	function mouseReleased() {
-	ball1.fly();
 	
 	
 	
-	}
+	
 
 
